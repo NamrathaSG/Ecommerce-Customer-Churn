@@ -46,3 +46,10 @@ Below table gives a detailed information on each continuous field.
 ![Picture1](https://user-images.githubusercontent.com/50361336/105450769-31cde800-5ca1-11eb-81c4-5069af4ab0c7.png)
 
 Distribution plots of all continuous variables in dataset: 
+
+![Picture2](https://user-images.githubusercontent.com/50361336/105451265-41016580-5ca2-11eb-9f89-c5a76a7776ac.png)
+![Picture3](https://user-images.githubusercontent.com/50361336/105451272-42cb2900-5ca2-11eb-8e11-fd9efd312b5f.png) 
+
+The following represents Distribution percentage of Categorical Variables 
+
+
