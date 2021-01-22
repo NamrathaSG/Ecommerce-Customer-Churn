@@ -52,4 +52,43 @@ Distribution plots of all continuous variables in dataset:
 
 The following represents Distribution percentage of Categorical Variables 
 
+<img width="803" alt="Screenshot 2021-01-22 at 11 05 50 AM" src="https://user-images.githubusercontent.com/50361336/105451475-a2c1cf80-5ca2-11eb-8259-fdc3a43c4a11.png">  
+
+### e.	Bivariate analysis (relationship between different variables, correlations) 
+
+<img width="818" alt="Screenshot 2021-01-22 at 11 06 10 AM" src="https://user-images.githubusercontent.com/50361336/105451503-ac4b3780-5ca2-11eb-9950-6be790234833.png"> 
+
+### f.	Business Insights derived from the EDA 
+
+- We are able to understand the scope of this dataset, that is , data is provided for a limited time period (time range constraint ) and thus might reduce the efficiency of the predicted model 
+- Nothing about the E-commerce company (It is anonymous) is known. Thereby making personalised suggestions and data explorations limited
+- Thus we move ahead to model building, where we try and find the top predictors influencing churn and from the insights derived, make recommendations for customer incentives, company policies, product pricing and payment methods. 
+
+## Data Cleaning and Pre-Processing 
+
+### a.  Removal of unwanted variables (if applicable)	 
+CustomerID is a variable that will not be useful for our analysis. Have checked to see if each record is a unique CustomerID and made sure it is. So, we can safely remove CustomerID variable. 
+
+From an initial look into the dataset, we don’t see any other variable that are unwanted. 
+
+### b.	Missing Value treatment (if applicable)	
+In categorical variables there are no NULL/NaN values. 
+Missing values for each continuous variable is as given below. From this we see that days since last order has maximum null values at 307. This accounts to be about 5.5 %. So, we can impute null values with the median value for each variable.   
+
+Now the null counts of variables is given as: 
+
+![Picture4](https://user-images.githubusercontent.com/50361336/105451282-452d8300-5ca2-11eb-8c4a-99e8fe3eb9c5.png)  
+
+We can see that variables that have missing values are 'Tenure', 'WareHousetoHome', 'HourSpendOnApp', 'OrderAmountHikeFromlastYear' , 'CouponUsed' , 'OrderCount', 'DaySinceLastOrder'. 
+
+We treat missing values with median value for each variable. 
+
+
+### c.	Outlier treatment (if required)
+We see that there are no outliers in the categorical variables. The maximum number of outliers is found out to be 703 which accounts for 13%, so we go ahead and treat it for outliers and replace them with their medians. We first treat for values that are above the third quartile, Q3, observe the impact on the number of outliers recorded and then treat for outliers which are below the first quartile, i.e. Q1.However, to prevent the problem of overfitting, the same is not done for the variable “Cashbackamount”.
+
+
+
+
+
 
